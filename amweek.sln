@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "amweek.database", "amweek.database\amweek.database.sqlproj", "{46B1B23E-B221-406A-9A99-42610F9001FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignUp.Web", "SignUp.Web\SignUp.Web.csproj", "{17A57CF4-A6C1-47C1-AA38-650DB6D87F8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{46B1B23E-B221-406A-9A99-42610F9001FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46B1B23E-B221-406A-9A99-42610F9001FA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{46B1B23E-B221-406A-9A99-42610F9001FA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{17A57CF4-A6C1-47C1-AA38-650DB6D87F8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A57CF4-A6C1-47C1-AA38-650DB6D87F8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A57CF4-A6C1-47C1-AA38-650DB6D87F8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A57CF4-A6C1-47C1-AA38-650DB6D87F8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
