@@ -360,24 +360,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SignUp.Core\SignUp.Core.csproj">
-      <Project>{194ea1bb-5cb0-4240-88c8-5cffb1c18cf5}</Project>
-      <Name>SignUp.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SignUp.Entities\SignUp.Entities.csproj">
-      <Project>{76f9894e-72b3-4d37-b79b-3548f09f1231}</Project>
-      <Name>SignUp.Entities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SignUp.Messaging\SignUp.Messaging.csproj">
-      <Project>{eaf3e985-6a9a-4a6c-a599-3c5467d67189}</Project>
-      <Name>SignUp.Messaging</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SignUp.Model\SignUp.Model.csproj">
-      <Project>{3afc4a48-5db6-48ff-a459-20ec21a2eb28}</Project>
-      <Name>SignUp.Model</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
