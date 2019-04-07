@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  signup.web:
+    image: ${DOCKER_REGISTRY-}signupweb
+    build:
+      context: .\SignUp.Web
+      dockerfile: Dockerfile

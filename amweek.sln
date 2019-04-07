@@ -7,6 +7,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "amweek.database", "amweek.d
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignUp.Web", "SignUp.Web\SignUp.Web.csproj", "{17A57CF4-A6C1-47C1-AA38-650DB6D87F8F}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{F20F3360-8A25-4EC3-9D4F-B3ECE90FBD19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{17A57CF4-A6C1-47C1-AA38-650DB6D87F8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17A57CF4-A6C1-47C1-AA38-650DB6D87F8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17A57CF4-A6C1-47C1-AA38-650DB6D87F8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F20F3360-8A25-4EC3-9D4F-B3ECE90FBD19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F20F3360-8A25-4EC3-9D4F-B3ECE90FBD19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F20F3360-8A25-4EC3-9D4F-B3ECE90FBD19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F20F3360-8A25-4EC3-9D4F-B3ECE90FBD19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
