@@ -1,4 +1,4 @@
-﻿using SignUp.Entities;
+﻿using SignUp.Model.Entities;
 
 namespace SignUp.Web.ProspectSave
 {

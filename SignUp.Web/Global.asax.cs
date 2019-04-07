@@ -7,7 +7,6 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using SignUp.Core;
 using SignUp.Model;
 using SignUp.Model.Initializers;
 using SignUp.Web.Logging;
@@ -25,8 +24,7 @@ namespace SignUp.Web
             ServiceProvider = new ServiceCollection()
                 .AddTransient<DatabaseReferenceDataLoader>()
                 .AddTransient<ApiReferenceDataLoader>()
-                .AddTransient<SynchronousProspectSaveHandler>()
-                .AddTransient<AsynchronousProspectSaveHandler>()
+                .AddTransient<SynchronousProspectSaveHandler>()                
                 .BuildServiceProvider();
         }
 

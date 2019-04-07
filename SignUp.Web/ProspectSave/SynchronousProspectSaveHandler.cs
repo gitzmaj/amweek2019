@@ -1,5 +1,5 @@
-﻿using SignUp.Entities;
-using SignUp.Model;
+﻿using SignUp.Model;
+using SignUp.Model.Entities;
 using System.Linq;
 
 namespace SignUp.Web.ProspectSave

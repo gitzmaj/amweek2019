@@ -180,6 +180,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="img\docker-enterprise.png" />
+    <Content Include="img\starship.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
@@ -304,9 +305,15 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Core\Config.cs" />
     <Compile Include="Logging\Log.cs" />
     <Compile Include="Logging\LogLevel.cs" />
-    <Compile Include="ProspectSave\AsynchronousProspectSaveHandler.cs" />
+    <Compile Include="Model\Entities\Country.cs" />
+    <Compile Include="Model\Initializers\StaticDataInitializer.cs" />
+    <Compile Include="Model\ProductLaunchConfiguration.cs" />
+    <Compile Include="Model\ProductLaunchContext.cs" />
+    <Compile Include="Model\Entities\Prospect.cs" />
+    <Compile Include="Model\Entities\Role.cs" />
     <Compile Include="ProspectSave\IProspectSaveHandler.cs" />
     <Compile Include="ProspectSave\SynchronousProspectSaveHandler.cs" />
     <Compile Include="ReferenceData\ApiReferenceDataLoader.cs" />

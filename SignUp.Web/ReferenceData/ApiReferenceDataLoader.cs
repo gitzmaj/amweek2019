@@ -1,8 +1,7 @@
 ﻿using RestSharp;
 using SignUp.Core;
-using SignUp.Entities;
+using SignUp.Model.Entities;
 using System.Collections.Generic;
-using System.Configuration;
 
 namespace SignUp.Web.ReferenceData
 {

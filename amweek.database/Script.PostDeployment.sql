@@ -12,17 +12,17 @@
 
 INSERT INTO Roles(RoleCode, RoleName) 
 VALUES 
-('-', N'--Not telling'),
-('AC', N'Architect'),
-('DA', N'Developer Advocate'),
-('DM', N'Decision Maker'),
+('-', N'--Not sharing'),
+('TL', N'Technician'),
+('ST', N'Senior Technician'),
 ('EN', N'Engineer'),
-('OP', N'IT Ops')
+('SE', N'Senior Engineer'),
+('CL', N'Consultant')
 
 
 INSERT INTO Countries(CountryCode, CountryName)
 VALUES
-('-', N'--Not telling'),
+('-', N'--Not sharing'),
 ('RS', N'Serbia'),
 ('RO', N'Romania'),
 ('MK', N'Macedonia'),

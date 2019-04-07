@@ -1,4 +1,4 @@
-﻿using SignUp.Entities;
+﻿using SignUp.Model.Entities;
 using System.Collections.Generic;
 
 namespace SignUp.Web.ReferenceData

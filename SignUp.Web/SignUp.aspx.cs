@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using SignUp.Core;
-using SignUp.Entities;
+using SignUp.Model.Entities;
 using SignUp.Web.Logging;
 using SignUp.Web.ProspectSave;
 using SignUp.Web.ReferenceData;
