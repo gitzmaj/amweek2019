@@ -7,6 +7,10 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "amweek.database", "amweek.d
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignUp.Web", "SignUp.Web\SignUp.Web.csproj", "{17A57CF4-A6C1-47C1-AA38-650DB6D87F8F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "amweek.writer", "amweek.writer\amweek.writer.csproj", "{3E9A14FC-162D-44CF-88D7-C8D5F5E6F115}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "amweek.Entities", "amweek.Entities\amweek.Entities.csproj", "{E67ECC37-D7A9-44AD-9A7D-CE6812B2BCE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,14 @@ Global
 		{17A57CF4-A6C1-47C1-AA38-650DB6D87F8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17A57CF4-A6C1-47C1-AA38-650DB6D87F8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17A57CF4-A6C1-47C1-AA38-650DB6D87F8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E9A14FC-162D-44CF-88D7-C8D5F5E6F115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E9A14FC-162D-44CF-88D7-C8D5F5E6F115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E9A14FC-162D-44CF-88D7-C8D5F5E6F115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E9A14FC-162D-44CF-88D7-C8D5F5E6F115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E67ECC37-D7A9-44AD-9A7D-CE6812B2BCE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E67ECC37-D7A9-44AD-9A7D-CE6812B2BCE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E67ECC37-D7A9-44AD-9A7D-CE6812B2BCE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E67ECC37-D7A9-44AD-9A7D-CE6812B2BCE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

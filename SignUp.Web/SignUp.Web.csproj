@@ -69,6 +69,9 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Diagnostics.Tracing.EventSource, Version=1.1.28.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.28\lib\net46\Microsoft.Diagnostics.Tracing.EventSource.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Extensions.Configuration, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Configuration.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
     </Reference>
@@ -107,6 +110,9 @@
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RabbitMQ.Client, Version=5.0.0.0, Culture=neutral, PublicKeyToken=89e7d7c5feba84ce, processorArchitecture=MSIL">
+      <HintPath>..\packages\RabbitMQ.Client.5.1.0\lib\net451\RabbitMQ.Client.dll</HintPath>
     </Reference>
     <Reference Include="RestSharp, Version=106.4.2.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
       <HintPath>..\packages\RestSharp.106.4.2\lib\net452\RestSharp.dll</HintPath>
@@ -308,12 +314,9 @@
     <Compile Include="Core\Config.cs" />
     <Compile Include="Logging\Log.cs" />
     <Compile Include="Logging\LogLevel.cs" />
-    <Compile Include="Model\Entities\Country.cs" />
     <Compile Include="Model\Initializers\StaticDataInitializer.cs" />
     <Compile Include="Model\ProductLaunchConfiguration.cs" />
     <Compile Include="Model\ProductLaunchContext.cs" />
-    <Compile Include="Model\Entities\Prospect.cs" />
-    <Compile Include="Model\Entities\Role.cs" />
     <Compile Include="ProspectSave\IProspectSaveHandler.cs" />
     <Compile Include="ProspectSave\SynchronousProspectSaveHandler.cs" />
     <Compile Include="ReferenceData\ApiReferenceDataLoader.cs" />
@@ -371,6 +374,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\amweek.Entities\amweek.Entities.csproj">
+      <Project>{e67ecc37-d7a9-44ad-9a7d-ce6812b2bce6}</Project>
+      <Name>amweek.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

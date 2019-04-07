@@ -1,5 +1,4 @@
-﻿using SignUp.Model;
-using SignUp.Model.Entities;
+﻿using amweek.Entities;
 using System.Linq;
 
 namespace SignUp.Web.ProspectSave
@@ -8,7 +7,7 @@ namespace SignUp.Web.ProspectSave
     {
         public void SaveProspect(Prospect prospect)
         {
-            using (var context = new SignUpContext())
+            using (var context = new Model.SignUpContext())
             {
                 //reload child objects:
                 prospect.Country = context.Countries.Single(x => x.CountryCode == prospect.Country.CountryCode);

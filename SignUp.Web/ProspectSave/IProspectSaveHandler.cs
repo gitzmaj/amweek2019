@@ -1,4 +1,4 @@
-﻿using SignUp.Model.Entities;
+﻿using amweek.Entities;
 
 namespace SignUp.Web.ProspectSave
 {

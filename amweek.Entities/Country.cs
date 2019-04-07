@@ -1,4 +1,5 @@
-﻿namespace SignUp.Model.Entities
+﻿
+namespace amweek.Entities
 {
     public class Country
     {
