@@ -13,7 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\amweek.Entities\amweek.Entities.csproj" />
+    <ProjectReference Include="..\amweek.Entities\amweek.entities.csproj" />
+    <ProjectReference Include="..\amweek.messaging\amweek.messaging.csproj" />
   </ItemGroup>
 
 </Project>

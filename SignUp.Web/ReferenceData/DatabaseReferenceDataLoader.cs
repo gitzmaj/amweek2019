@@ -1,5 +1,5 @@
-﻿using SignUp.Model;
-using SignUp.Model.Entities;
+﻿using amweek.Entities;
+using SignUp.Model;
 using System.Collections.Generic;
 using System.Linq;
 

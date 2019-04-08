@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using amweek.Entities;
+using amweek.messaging;
+using amweek.messaging.Messages.Events;
 using SignUp.Core;
-using SignUp.Model.Entities;
 using SignUp.Web.Logging;
 using SignUp.Web.ProspectSave;
 using SignUp.Web.ReferenceData;
@@ -18,7 +20,7 @@ namespace SignUp.Web
 
         public static void PreloadStaticDataCache()
         {
-            var loaderType = Config.Current["Dependencies:IReferenceDataLoader"];
+            var loaderType = Core.Config.Current["Dependencies:IReferenceDataLoader"];
             Log.Debug($"Using IReferenceDataLoader implementation: {loaderType}");
 
             var type = Type.GetType(loaderType);
@@ -77,14 +79,14 @@ namespace SignUp.Web
                 Role = role
             };
 
-            var handlerType = Config.Current["Dependencies:IProspectSaveHandler"];
-            Log.Debug($"Using IProspectSaveHandler implementation: {handlerType}");
+            var eventMessage = new ProspectSignedUpEvent
+            {
+                Prospect = prospect,
+                SignedUpAt = DateTime.UtcNow
+            };
 
-            var type = Type.GetType(handlerType);
-            var handler = (IProspectSaveHandler)Global.ServiceProvider.GetService(type);
-            handler.SaveProspect(prospect);
+            MessageQueue.Publish(eventMessage);
 
-            Log.Info($"Saved new prospect, email address: {prospect.EmailAddress}");
             Server.Transfer("ThankYou.aspx");
         }
     }

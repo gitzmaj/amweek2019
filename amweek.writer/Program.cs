@@ -10,9 +10,8 @@ namespace amweek.writer
         {
             var hostBuilder = new HostBuilder();
             var writer = new Writer();
-
+            writer.Subscribe();
             await hostBuilder.RunConsoleAsync();
-            writer.Close();
         }
     }
 }

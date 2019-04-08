@@ -1,6 +1,6 @@
-﻿using RestSharp;
+﻿using amweek.Entities;
+using RestSharp;
 using SignUp.Core;
-using SignUp.Model.Entities;
 using System.Collections.Generic;
 
 namespace SignUp.Web.ReferenceData

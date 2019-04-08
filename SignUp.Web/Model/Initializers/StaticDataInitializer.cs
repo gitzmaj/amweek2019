@@ -1,4 +1,4 @@
-﻿using SignUp.Model.Entities;
+﻿using amweek.Entities;
 using System.Data.Entity;
 
 namespace SignUp.Model.Initializers

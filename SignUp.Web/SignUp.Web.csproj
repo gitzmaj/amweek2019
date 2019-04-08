@@ -111,9 +111,6 @@
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="RabbitMQ.Client, Version=5.0.0.0, Culture=neutral, PublicKeyToken=89e7d7c5feba84ce, processorArchitecture=MSIL">
-      <HintPath>..\packages\RabbitMQ.Client.5.1.0\lib\net451\RabbitMQ.Client.dll</HintPath>
-    </Reference>
     <Reference Include="RestSharp, Version=106.4.2.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
       <HintPath>..\packages\RestSharp.106.4.2\lib\net452\RestSharp.dll</HintPath>
     </Reference>
@@ -376,9 +373,13 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\amweek.Entities\amweek.Entities.csproj">
+    <ProjectReference Include="..\amweek.Entities\amweek.entities.csproj">
       <Project>{e67ecc37-d7a9-44ad-9a7d-ce6812b2bce6}</Project>
-      <Name>amweek.Entities</Name>
+      <Name>amweek.entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\amweek.messaging\amweek.messaging.csproj">
+      <Project>{e02eff91-8c52-4dce-8279-3fd1ee0659ef}</Project>
+      <Name>amweek.messaging</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
