@@ -34,23 +34,24 @@ namespace amweek.writer
             {
                 var prospect = eventMessage.Prospect;
 
-                var connectionString = @"Server=localhost;Database=DapperDemo;Trusted_Connection=true;";
+                var connectionString = @"Server=.;Database=amweek;User Id=amweek;Password=AMWeek";
 
                 using (IDbConnection db = new SqlConnection(connectionString))
                 {
-                    string insertQuery = @"INSERT INTO [dbo].[Prospects]" +
-                        "([FirstName], [LastName], [CompanyName], [EmailAddress], [Country_CountryCode], [Role_RoleCode]) " +
-                        "VALUES (@FirstName, @LastName, @CompanyName, @EmailAdress, @Country, @Role)";
+                    string insertQuery = @"INSERT INTO [dbo].[Prospects] ([FirstName], [LastName], [CompanyName], [EmailAddress], [Country_CountryCode], [Role_RoleCode])" +
+                        " VALUES (@FirstName, @LastName, @CompanyName, @EmailAddress, @Country_CountryCode, @Role_RoleCode)";
 
-                    var result = db.Execute(insertQuery, new
+                    var objectToInsert = new
                     {
-                        prospect.FirstName,
-                        prospect.LastName,
-                        prospect.CompanyName,
-                        prospect.EmailAddress,
-                        prospect.Country,
-                        prospect.Role
-                    });
+                        FirstName = prospect.FirstName,
+                        LastName = prospect.LastName,
+                        CompanyName = prospect.CompanyName,
+                        EmailAddress = prospect.EmailAddress,
+                        Country_CountryCode = prospect.Country.CountryCode,
+                        Role_RoleCode = prospect.Role.RoleCode
+                    };
+
+                    var result = db.Execute(insertQuery, objectToInsert);
                 }
             }
             catch (Exception ex)
