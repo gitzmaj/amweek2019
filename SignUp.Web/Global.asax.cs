@@ -5,12 +5,10 @@ using System.Linq;
 using System.Web;
 using System.Web.Optimization;
 using System.Web.Routing;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SignUp.Model;
 using SignUp.Model.Initializers;
 using SignUp.Web.Logging;
-using SignUp.Web.ProspectSave;
 using SignUp.Web.ReferenceData;
 
 namespace SignUp.Web
@@ -24,7 +22,6 @@ namespace SignUp.Web
             ServiceProvider = new ServiceCollection()
                 .AddTransient<DatabaseReferenceDataLoader>()
                 .AddTransient<ApiReferenceDataLoader>()
-                .AddTransient<SynchronousProspectSaveHandler>()                
                 .BuildServiceProvider();
         }
 
