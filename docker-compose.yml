@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  amweek.writer:
+    image: ${DOCKER_REGISTRY-}amweekwriter
+    build:
+      context: .
+      dockerfile: amweek.writer\Dockerfile
