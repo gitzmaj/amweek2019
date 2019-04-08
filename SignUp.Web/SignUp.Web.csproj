@@ -314,8 +314,6 @@
     <Compile Include="Model\Initializers\StaticDataInitializer.cs" />
     <Compile Include="Model\ProductLaunchConfiguration.cs" />
     <Compile Include="Model\ProductLaunchContext.cs" />
-    <Compile Include="ProspectSave\IProspectSaveHandler.cs" />
-    <Compile Include="ProspectSave\SynchronousProspectSaveHandler.cs" />
     <Compile Include="ReferenceData\ApiReferenceDataLoader.cs" />
     <Compile Include="ReferenceData\DatabaseReferenceDataLoader.cs" />
     <Compile Include="ReferenceData\IReferenceDataLoader.cs" />

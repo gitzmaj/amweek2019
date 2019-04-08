@@ -18,7 +18,7 @@ namespace amweek.messaging
 
         public static IConnection CreateConnection()
         {
-            return new ConnectionFactory().CreateConnection(Config.MessageQueueUrl);
+            return new ConnectionFactory().CreateConnection("nats");
         }
     }
 }
